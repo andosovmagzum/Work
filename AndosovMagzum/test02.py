@@ -18,7 +18,7 @@ else:
 pageGoogle_ExpectedTitle = "Google"
 pageYahoo_ExpectedTitle = "Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports & Videos"
 pageTesla_ExpectedTitle = "Electric Cars, Solar & Clean Energy | Tesla"
-current_title == driver.title
+current_title = driver.current_title
 
 if current_title == pageGoogle_ExpectedTitle:
     print("Current Title is OK")
