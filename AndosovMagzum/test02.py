@@ -11,14 +11,14 @@ driver.maximize_window()
 assert driver.current_url == url_google
 current_url = driver.current_url
 if current_url == url_google:
-    print("Current URL is OK")
+    print("Current URL is OK", driver.current_url)
 else:
     print("Current URL is different than Expect URL", driver.current_url)
 
 pageGoogle_ExpectedTitle = "Google"
 pageYahoo_ExpectedTitle = "Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports & Videos"
 pageTesla_ExpectedTitle = "Electric Cars, Solar & Clean Energy | Tesla"
-current_title = driver.current_title
+current_title = driver.title
 
 if current_title == pageGoogle_ExpectedTitle:
     print("Current Title is OK")
